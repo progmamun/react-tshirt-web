@@ -36,6 +36,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
         </div>
       )}
       {cart.length === 0 || <p className="orange">YAY! Your are buying...</p>}
+      {cart.length === 4 && <button className="orange">Review Order</button>}
     </div>
   );
 };

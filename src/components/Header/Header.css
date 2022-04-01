@@ -1,0 +1,8 @@
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+nav a:hover {
+  color: goldenrod;
+}

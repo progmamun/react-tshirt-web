@@ -1,9 +1,14 @@
 import React from 'react';
+import './Home.css';
+import Cart from '../Cart/Cart';
 
 const Home = () => {
   return (
-    <div>
-      <h3>this is home components</h3>
+    <div className="home-container">
+      <div className="tshirt-container"></div>
+      <div className="cart-container">
+        <Cart></Cart>
+      </div>
     </div>
   );
 };

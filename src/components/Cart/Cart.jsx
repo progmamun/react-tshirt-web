@@ -5,6 +5,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
   // Conditional Rendering Options
   // 1. Element Variable
   // 2. Ternary operator condition ? true : false;
+  // 3. && Operator (shorthand)
   let command;
   if (cart.length === 0) {
     command = <p>Please Add at least one items</p>;
@@ -28,6 +29,11 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
       ))}
       {command}
       {cart.length !== 4 ? <p>Keep adding</p> : <button>Remove All</button>}
+      {cart.length === 3 && (
+        <div className="orange">
+          <h3>added three items</h3>
+        </div>
+      )}
     </div>
   );
 };
